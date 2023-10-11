@@ -35,12 +35,17 @@ header {
 
 .menu-item a {
     color: rgb(18, 100, 151);
+    background: white;
     text-decoration: none;
 }
 
-.menu-item.active a {
-    text-decoration: underline;
+.menu-item a:hover {
+    background: rgba(18, 100, 151, 0.687);
+    color: white;
+    text-decoration: none;
 }
+
+
 
 /*INICIO*//* Contenido principal */ 
 
@@ -60,13 +65,14 @@ header {
     font-size: 90px;
     color: rgb(18, 100, 151);
     color: rgba(5, 0, 98, 0.652);
-    
-    /*color: rgba(255, 255, 255, 0.782);*/
-    
     background-color: rgba(5, 33, 111, 0.48);
     background-color: rgba(119, 119, 120, 0.214);
     padding-inline: 20px;
 
+}
+
+.imagenPrincipal h2::selection {
+    background: rgba(204, 203, 203, 0.628);
 }
 
 .imagenPrincipal p {
@@ -78,7 +84,10 @@ header {
     background-color: rgba(119, 119, 120, 0.214);
     text-align: center;     
     padding-inline: 15px;
+}
 
+.imagenPrincipal p::selection {
+    background: rgba(204, 203, 203, 0.628);
 }
 /* Pie de pagina */
 .pie-de-pagina {
@@ -242,9 +251,12 @@ header {
 
 /*Contacto*/
 .seccionContacto {
-    height: 20vh;
-    background-color: rgba(18, 100, 151, 0.719);
-    color: white;    
+    height: 20vh;       
+    background-color: rgb(171, 171, 171);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(18, 100, 151);   
     display: flex;
     justify-content: center;
     text-align:center;
@@ -252,13 +264,19 @@ header {
     text-decoration: underline;
 }
 .formulario{
-    background-color: rgba(18, 100, 151, 0.719);
+    background-image: url("../img/imagen-piscina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     color: white;
-    
+    width:100%;
+    height: 40vh;
+    padding: 10px 20px;;
     display: flex;
     justify-content: center;
     text-align:center;
-    flex-direction: column; 
+    flex-direction: column;
+   
     
 }
 
