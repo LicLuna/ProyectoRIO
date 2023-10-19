@@ -90,8 +90,7 @@ header {
 .imagenPrincipal p::selection {
     background: rgba(204, 203, 203, 0.628);
 }
-.tarjetitas {
-    
+.tarjetitas {    
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -104,15 +103,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-        
 }
 
 .informacion {
     padding: 0 20px 20px 20px;
     color: white;
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
+
 .tarjetita-imagen {
     width: 100%;
     height: 30vh;
